@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>四则运算</title>
+    </head>
+
+    <body>
+        <article>
+            <header>
+                <h1>四则运算</h1>
+            </header>
+
+            <div class="container1">
+                <div>
+                    <label for="operand1">整数1：</label>
+                    <input id="operand1" type="number" autofocus>
+                    <span class="errorMarks">❌</span>
+                </div>
+
+                <div>
+                    <label for="operand2">整数2：</label>
+                    <input id="operand2" type="number">
+                    <span class="errorMarks">❌</span>
+                </div>
+
+                <div class="container2">
+                    <button data-operator="plus">&plus;</button>
+                    <button data-operator="minus">&minus;</button>
+                    <button data-operator="times">&times;</button>
+                    <button data-operator="divide">&divide;</button>
+                </div>
+
+                <div class="result"></div>
+            </div>
+        </article>
+        <script src="scripts/arithmetic.js"></script>
+    </body>
+</html>
